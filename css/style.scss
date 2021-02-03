@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 100%;
 }
 
@@ -11,8 +11,6 @@ body {
   /* overflow-x: hidden; */
   font-family: Lato, sans-serif;
   color: #54575a;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(49.91%, #f3f8f7), color-stop(94.19%, #fff9f5));
-  background: -webkit-linear-gradient(top, #ffffff 0%, #f3f8f7 49.91%, #fff9f5 94.19%);
   background: linear-gradient(180deg, #ffffff 0%, #f3f8f7 49.91%, #fff9f5 94.19%);
 }
 
@@ -60,22 +58,22 @@ body {
   left: 222.01px;
   top: 532.01px;
   background: #000000;
-}
 
-.app-store-btn img {
-  width: 136.42px;
-  height: 44.26px;
+  & img {
+    width: 136.42px;
+    height: 44.26px;
+  }
 }
 
 .google-play-btn {
   position: absolute;
   left: 381.81px;
   top: 531px;
-}
 
-.google-play-btn img {
-  width: 156.19px;
-  height: 46.28px;
+  & img {
+    width: 156.19px;
+    height: 46.28px;
+  }
 }
 
 .main-image-container {
@@ -84,10 +82,10 @@ body {
   height: 309.27px;
   left: 683.28px;
   top: 229.73px;
-}
 
-.main-image-container img {
-  height: 411.15px;
+  & img {
+    height: 411.15px;
+  }
 }
 
 .profile-img {
@@ -139,20 +137,16 @@ body {
   position: absolute;
   right: 150px;
   top: 70px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-}
 
-.background-toggles > div {
-  height: 25px;
-  width: 25px;
-  border-radius: 5px;
-  margin-right: 10px;
-  -webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+  & > div {
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
 }
 
 /* Backgrounds */
@@ -162,24 +156,29 @@ body {
 }
 
 .background-2 {
-  background: #ada996;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#eaeaea), color-stop(#dbdbdb), color-stop(#f2f2f2), to(#ada996));
-  background: -webkit-linear-gradient(bottom, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
-  background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .background-3 {
-  background: #8e9eab;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#eef2f3), to(#8e9eab));
-  background: -webkit-linear-gradient(top, #eef2f3, #8e9eab);
-  background: linear-gradient(to bottom, #eef2f3, #8e9eab);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/*# sourceMappingURL=style.css.map */
